@@ -12,6 +12,6 @@ export class HomeComponent {
 
   constructor(private mobileService: MobileService) {
     this.mobileConfig = mobileService.mobileConfig;
-    this.imagePath = '/assets/images/'+this.mobileConfig.brand+'.jpg';
+    this.imagePath = './assets/images/'+this.mobileConfig.brand+'.jpg';
   }
 }
