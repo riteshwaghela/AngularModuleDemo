@@ -1,0 +1,18 @@
+
+<p> I am Home Component. Loading the below imae based on the config passed in MobileModule's <strong>forRoot</strong> method </p>
+
+<img [src]="imagePath">
+
+<p>I get the brand from Mobile Service. Mobile Service is a part of MobileModule which has a forRoot method. It takes 
+the follwoing JSON object as a configuration: </p>
+
+{{mobileConfig | json}}
+
+<p> MobileModule.forRoot(config)</p>
+
+<p> This is an exmaple of how a module can be configured from another module</p>
+
+<p>  App module imports Mobile module and calls forRoot method that returns a module with providers </p>
+
+
+
